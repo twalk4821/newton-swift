@@ -10,6 +10,7 @@
 		9593C2711F34306D007750C4 /* newton-swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9593C2671F34306D007750C4 /* newton-swift.framework */; };
 		9593C2761F34306D007750C4 /* newton_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9593C2751F34306D007750C4 /* newton_swiftTests.swift */; };
 		9593C2781F34306D007750C4 /* newton-swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9593C26A1F34306D007750C4 /* newton-swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9593C2821F34307F007750C4 /* newton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9593C2811F34307F007750C4 /* newton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9593C2701F34306D007750C4 /* newton-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "newton-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9593C2751F34306D007750C4 /* newton_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newton_swiftTests.swift; sourceTree = "<group>"; };
 		9593C2771F34306D007750C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9593C2811F34307F007750C4 /* newton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				9593C26A1F34306D007750C4 /* newton-swift.h */,
 				9593C26B1F34306D007750C4 /* Info.plist */,
+				9593C2811F34307F007750C4 /* newton.swift */,
 			);
 			path = "newton-swift";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					9593C2661F34306D007750C4 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9593C26F1F34306D007750C4 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9593C2821F34307F007750C4 /* newton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		9593C27C1F34306D007750C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tylerwalker.newton-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		9593C27D1F34306D007750C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		9593C27F1F34306D007750C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "newton-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tylerwalker.newton-swiftTests";
@@ -369,6 +378,7 @@
 		9593C2801F34306D007750C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "newton-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tylerwalker.newton-swiftTests";
