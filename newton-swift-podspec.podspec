@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "newton-swift-podspec"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "iOS port for NewtonMath API"
   s.requires_arc = true
 
@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "iOS port for NewtonMath API"
 
   s.homepage     = "http://EXAMPLE/newton-swift-podspec"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
